@@ -1,0 +1,285 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fdfdfd;
+  padding: 15px;
+  position: relative;
+}
+
+.logo {
+  width: 2;
+  height: 2;
+  
+}
+
+.nav-links {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+  
+.nav-links li {
+  margin-right: 20px;
+}
+  
+.nav-links a {
+  color: #000000;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-weight: bold;
+}
+   
+.social-media {
+  display: flex;
+  align-items: center;
+}
+  
+.social-media a {
+  margin-left: 10px;
+  transition: transform 0.3s;
+}
+  
+.social-media a:hover {
+  transform: scale(1.2);
+}
+  
+.social-media a img {
+  width: 30px;
+  height: auto;
+}
+  
+.hero {
+  height: 100vh;
+  /* width: 100%; */
+  background-image: url(heroimg.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 100px 0;
+}
+.content {
+  position: absolute;
+  bottom: 0;
+  left: 50px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px;
+  width: 20%; /* or any desired width */
+  box-sizing: border-box;
+  font-size: 30px;
+}
+.container {
+  background-color: #b2b2b2;
+  display: flex;
+  flex-wrap: wrap;
+}
+.text {
+  flex: 0 0 33.33%; 
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.text p {
+  font-weight: normal;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.features {
+  background-color: #dad6df;
+}
+
+.features .feature {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 40px;
+  color: #000000;
+  margin: 130px;
+}
+
+.card-container .card {
+  width: 300px;
+  overflow: hidden;
+  background-color: transparent;
+  margin: 50px;
+}
+
+.card-container .card img {
+  width: 100%;
+  height: auto;
+}
+
+.card-container .card a,p {
+  font-weight: bold;
+}
+
+.card-container .card .btn {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  display: inline-block;
+  padding: 8px 16px;
+
+}
+
+
+
+
+/* For small screens (mobile devices) */
+
+@media (max-width: 460px) {
+  .hero {
+      width: 100%;
+      height: auto;
+      background-size: cover;
+  }
+
+  .nav-links {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .nav-links li {
+      margin: 0;
+      margin-bottom: 10px;
+  }
+  .social-media{
+    margin: 0;
+    margin-top: 10px;
+  }
+
+  .navbar {
+      padding: 10px;
+  }
+
+  .content {
+      left: 0;
+      width: 100%;
+  }
+
+  .features .feature {
+      font-size: 30px;
+      margin: 20px 0;
+  }
+
+  .card-container .card {
+      width: 80%;
+      margin: 0 auto;
+  }
+}
+
+
+@media only screen and (max-width: 576px) {
+  .navbar {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .nav-links {
+      margin-top: 15px;
+      column-gap: 1rem;
+  }
+
+  .nav-links li {
+      margin: 0;
+  }
+
+  .nav-links li:not(:last-child) {
+      margin-bottom: 10px;
+  }
+
+  .hero {
+      height: 50vh;
+  }
+
+  .content {
+      left: 0;
+      width: 100%;
+  }
+
+  .container .text {
+      flex: 0 0 100%;
+  }
+
+  .features .feature {
+      font-size: 30px;
+  }
+
+  .card-container .card {
+      width: 80%;
+      margin: 20px auto;
+  }
+
+  .card-container .card .card-content {
+      text-align: center;
+  }
+}
+
+/* For medium screens (tablets) */
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .navbar {
+      padding: 10px;
+  }
+
+  .content {
+      font-size: 20px;
+  }
+
+  .hero {
+      height: 70vh;
+  }
+
+  .nav-links li {
+      margin-right: 10px;
+  }
+
+  .features .feature {
+      font-size: 35px;
+  }
+
+  .card-container .card {
+      width: 45%;
+      margin: 20px;
+  }
+}
+
+/* For large screens (desktops) */
+@media only screen and (min-width: 769px) {
+  .navbar {
+      padding: 15px;
+  }
+
+  .hero {
+      height: 100vh;
+  }
+
+  .nav-links li {
+      margin-right: 20px;
+  }
+
+  .features .feature {
+      font-size: 40px;
+  }
+
+  .card-container .card {
+      width: 300px;
+      margin: 50px;
+  }
+}
