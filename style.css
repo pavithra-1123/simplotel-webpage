@@ -206,12 +206,13 @@ body {
   }
 
   .hero {
-      height: 50vh;
+      height: 80vh;
+      
   }
 
   .content {
-      left: 0;
-      width: 100%;
+      left: 20px;
+      width: 40%;
   }
 
   .container .text {
@@ -240,6 +241,7 @@ body {
 
   .content {
       font-size: 20px;
+      bottom: 200px;
   }
 
   .hero {
